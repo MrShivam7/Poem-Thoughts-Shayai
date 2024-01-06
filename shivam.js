@@ -28,7 +28,7 @@ var i = 0;
             currentTextIndex = (currentTextIndex + 1) % txt1.length; // Cycle through quote 
             i = 0; // Reset character index
             document.getElementById("text1").innerHTML = ""; // Clear quote
-            typeWriter(); // Script will Start typing the next quote 
+            setTimeout(typeWriter, speed); // Script will Start typing the next quote 
         }
 
         function previousText() {
@@ -38,5 +38,5 @@ var i = 0;
             }
             i = 0;
             document.getElementById("text1").innerHTML = "";
-            typeWriter();
+            setTimeout(typeWriter, speed);
         }
